@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 const Header = () => {
     return (
         <header style={styles.header}>
@@ -29,34 +32,8 @@ const styles = {
     logo: {
         display: 'flex',
         alignItems: 'center'
-    },
-    logoImage: {
-        height: '60px'
-    },
-    navbar: {
-        display: 'flex',
-        alignItems: 'center'
-    },
-    navList: {
-        listStyle: 'none',
-        display: 'flex',
-        margin: 0,
-        padding: 0
-    },
-    navItem: {
-        marginLeft: '20px'
-    },
-    navLink: {
-        color: '#fff',
-        textDecoration: 'none',
-        fontSize: '18px'
-    },
-    navLinkHover: {
-        textDecoration: 'underline'
     }
 }
-
-
 
 const App = () => {
     return (
@@ -66,7 +43,6 @@ const App = () => {
         </>
     );
 }
-
 
 const CardContainer = () => {
     const [posts, setPosts] = React.useState([]);
@@ -83,46 +59,6 @@ const CardContainer = () => {
         gap: '20px',
         padding: '20px',
         background: '#D3D3D3',
-    };
-
-    const cardStyle = {
-        background: 'white',
-        borderRadius: '15px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-        overflow: 'hidden',
-        width: '300px',
-        display: 'flex',
-        flexDirection: 'column',
-        transition: 'transform 0.2s',
-    };
-
-    const cardHoverStyle = {
-        transform: 'scale(1.05)',
-    };
-
-    const imgStyle = {
-        width: '100%',
-        height: 'auto',
-    };
-
-    const contentStyle = {
-        padding: '16px',
-    };
-
-    const h2Style = {
-        fontSize: '1.5em',
-        margin: '16px 0',
-    };
-
-    const pStyle = {
-        fontSize: '1em',
-        margin: '0 0 16px',
-    };
-
-    const authorDateStyle = {
-        fontSize: '0.8em',
-        color: '#555',
-        margin: '0 0 16px',
     };
 
     return (
@@ -199,7 +135,4 @@ Card.propTypes = {
     fecha: PropTypes.string.isRequired,
 };
 
-
-
-const root = document.getElementById('root');
-ReactDOM.render(<App />, root);
+export default App;
