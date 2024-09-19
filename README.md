@@ -1,7 +1,3 @@
-Aquí tienes un README para tu proyecto de aplicación React sobre posts de fútbol:
-
----
-
 # NotiFutbol
 
 La aplicación NotiFutbol es una aplicación web desarrollada con React que muestra publicaciones (posts) relacionadas con el fútbol. La aplicación obtiene los datos de una API y presenta cada post en una tarjeta visualmente atractiva.
